@@ -1,0 +1,386 @@
+body {
+    background-color: black;
+    background-image: url("csko.png") ;
+    color: white;
+    font-family: 'Evanston Tavern 1858';
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  
+  }
+  .black {
+  color: black;
+  }
+  .center {
+  width:200px;
+  height:200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  }
+  
+  .divmain {
+  width: 75%;
+  background-color: rgba(32, 32, 32, 0.95);
+  margin-left: auto;
+  margin-right: auto;
+  height: 3000px;
+  }
+  
+  .letterspacing5px {
+  letter-spacing: 5px;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(32, 32, 32, 0.95);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color:  #f7ae21;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    color: #ffffff; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: #2b3b43 solid 6px; background-color: #202b31 ;
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #ffffff; 
+    background-color: #1e292e ;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: #526e7e solid 3px; 
+    padding-right: 5%;
+    padding-left: 5%;
+    z-index: 10;
+  
+  }
+  
+  .dropdown-content a:hover {
+    color:  #f7ae21; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .inlineblock {
+    display: inline-block;
+  }
+  .divborder {
+  border: #f7ae21 4px solid;
+  
+  }
+  @font-face {
+  font-family: 'Evanston Tavern 1858';
+  src: local('Evanston Tavern 1858 Medium'), local('Evanston-Tavern-1858-Medium'),
+      url('EvanstonTavern-1858Medium.woff2') format('woff2'),
+      url('EvanstonTavern-1858Medium.woff') format('woff'),
+      url('EvanstonTavern-1858Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  }
+  
+  .topnav .search-container {
+  float: right;
+  }
+  
+  .topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  }
+  
+  .topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+  background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  }
+  * {
+  box-sizing: border-box;
+  }
+  
+  
+  .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  z-index: 1;  
+  }
+  
+  .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  }
+  
+  .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  }
+  
+  .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-image: url("csgologoesport.png") ;
+  background-size: 150% ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #262D6E;
+  border: 4px solid #f7ae21; 
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  }
+  
+  .left {
+  left: 0;
+  }
+  
+  .right {
+  left: 50%;
+  }
+  
+  .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+  
+  .right::after {
+  left: -16px;
+  }
+  
+  .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  .right {
+    left: 0%;
+  }
+  }
+  .zoom {
+  transition: transform .2s; 
+  }
+  
+  .zoom:hover {
+  transform: scale(3); 
+  }
+  .imgbr {
+  border-radius: 5%;
+  }
+  
+  .box {
+  position: relative;
+  width: 20%;
+  }
+  
+  .box a.left-arrow{
+  
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  user-select: none;
+  
+  }
+  .box a.right-arrow{
+  
+  position: absolute;
+  top: 50%;
+  left: 480%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  user-select: none;
+  
+  }
+  
+  .numbertext {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+  
+  .text {
+    font-size: 12px;
+    padding: 8px 0px;
+    position: absolute;
+    top: 0px;
+    width: 204px;
+    margin-left: -50px;
+    text-align:center;
+    left: 50px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  h2{
+    margin: 0;
+    height: 0px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 300px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f7ae21;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #fad68f;
+  }
+  .bcskini {
+    background-image: url("skini wall.png");
+    background-repeat: no-repeat ;
+  }
+
+ 
+ 
