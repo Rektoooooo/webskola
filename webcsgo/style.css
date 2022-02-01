@@ -381,6 +381,10 @@ body {
     background-image: url("skini wall.png");
     background-repeat: no-repeat ;
   }
+  .outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
 
  
  
