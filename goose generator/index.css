@@ -1,0 +1,35 @@
+
+body {
+    font-family: -apple-system, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9b5adc;
+}
+
+.husa {
+    width: 400px;
+    height: 400px;
+    margin-left: 15%;
+}
+.husa1 {
+    display: none;
+}
+.buttonhusa {
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: solid black;
+    position: fixed;
+    margin-left: -80px;
+
+
+}
+.count {
+    margin-left: 49%;
+
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
